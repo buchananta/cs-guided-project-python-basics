@@ -13,4 +13,12 @@ Examples:
 """
 def nth_smallest(lst, n):
     # Your code here
+    try:
+        return sorted(lst)[n-1]
+    except IndexError:
+        return f"smallest rank '{n}' lower than list"
 
+def nth_smallest_instructor(lst: List[int], n: int) -> int:
+    lst.sort()
+    n_smallest = lst[n - 1]
+    return n_smallest

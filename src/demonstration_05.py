@@ -12,4 +12,9 @@ Examples:
 """
 def sort_by_length(lst):
     # Your code here
-
+    # lets cheat and not write my own sort
+    # return sorted(lst, key=len)
+    lst.sort(key=len)
+    return lst
+# I like how the comments fail to follow PEP8 XD
+# and I was just looking it up to make sure 4 spaces was standard (edit .vimrc)

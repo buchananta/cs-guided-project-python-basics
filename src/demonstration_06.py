@@ -17,4 +17,21 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    total = 0
+    for c in txt:
+        if c.toLower() == 'x':
+            total += 1
+        elif c.toLower() == 'o':
+            total -= 1
+    return total == 0
 
+# instructor (sean's) implementation
+def XOsean(txt):
+    xs = 0
+    os = 0
+    for character in txt:
+        if character == "x" or character == "X":
+            xs += 1
+        if character == "o" or character == "O":
+            os += 1
+    return xs == os

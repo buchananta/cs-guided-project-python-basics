@@ -8,6 +8,8 @@ Examples:
 - convert(3) ➞ 180
 - convert(2) ➞ 120
 """
+#def convert(minutes: int) -> int:
 def convert(minutes):
     # Your code here
-
+    # This is insultingly easy
+    return minutes * 60
